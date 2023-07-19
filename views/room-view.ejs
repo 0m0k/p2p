@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Omok</title>
+
+    <!-- import libraries -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script>
+    
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script>
+      const ROOM_ID = '<%= roomId %>';
+      console.log(`Assigned to room ${ROOM_ID}`);
+    </script>
+    <div id="left-pane">
+      <button id="fullscreen" onclick="toggleFullscreen()"></button>
+    </div>
+    <table id="grid"></table>
+    <div id="right-pane">
+    </div>
+    <script src="script.js"></script>
+    <script src="peer-interact.js"></script>
+  </body>
+</html>

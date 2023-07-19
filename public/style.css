@@ -1,0 +1,78 @@
+@import url("mobile.css") only screen and (max-width: 1000px);
+@import url("desktop.css") only screen and (min-width: 1000px);
+
+body {
+  display: flex;
+
+  /*horizontal center*/
+  justify-content: center;
+
+  /*vertial center*/
+  align-items: center;
+
+  /*center body*/
+  margin: auto;
+  
+  /*make content fill screen without scrollbar*/
+  width: 100vw;
+  height: 100vh;
+}
+
+#left-pane, #right-pane {
+  background: #FFD490;
+
+  /*fill remaining space*/
+  height: 100%;
+  flex: 1;
+}
+
+table {
+  background: #FFCA77;
+  
+  width: 100vmin;
+  height: 100vmin;
+}
+
+td {
+  outline: thin solid #FFA71D;
+  width: 4.76%;
+  height: 4.76%;
+}
+
+.piece {
+  position: absolute;
+  margin-top: 0.8vmin;
+  margin-left: 2.8vmin;
+  opacity: 0;
+  border-radius: 100%;
+  width: 2.4vmin;
+  height: 2.4vmin;
+}
+
+/*.piece {
+  position: relative;
+  bottom: 4.76%;
+  right: 4.76%;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  outline: 1px solid;
+  outline-offset: -1px;
+}*/
+
+/*.piece {
+  position: relative;
+  bottom: -15.8px;
+  right: -15.8px;
+  border-radius: 100%;
+  width:  21px;
+  height: 21px;
+  opacity: 0;
+  outline: 4px solid;
+  outline-offset: -1px;
+}*/
+
+.piece:hover {
+  opacity: 0.5;
+}
